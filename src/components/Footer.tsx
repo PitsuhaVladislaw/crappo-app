@@ -28,7 +28,7 @@ export default function Footer() {
                                 </h5>
                                 <div key={index} className="flex flex-col items-start gap-1">
                                     {obj.array.map((text, key) =>(
-                                        <h6 key={key} className="font-rubik text-base font-normal leading-[38px] text-left text-[#F2F2F2]">
+                                        <h6 key={key} className="font-rubik text-base font-normal leading-[38px] text-left text-[#F2F2F2] cursor-pointer">
                                             {text}
                                         </h6>
                                     ))}
@@ -64,7 +64,7 @@ export default function Footer() {
                     {iconsArray.map((Icon, index) => (
                         <Icon
                             key={index}
-                            className="w-6 h-6 text-white relative"
+                            className="w-6 h-6 text-white relative cursor-pointer transition duration-300 ease-in-out transform hover:scale-110 border border-white"
                         />
                     ))}
                 </article>

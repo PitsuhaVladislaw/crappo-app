@@ -4,6 +4,8 @@ import Header from "@/components/header"
 import Footer from "@/components/footer";
 import WhyCrappo from "@/components/whyCrappo";
 import NavBar from "@/components/navBar";
+import TradeSecurely from "@/components/tradeSecurely";
+import StartMining from "@/components/startMinig";
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       <NavBar />
       <Header />
       <WhyCrappo />
+      <TradeSecurely />
+      <StartMining />
       <Footer />
     </>
   );
