@@ -4,6 +4,9 @@
 
 body {
     background-color: rgba(13, 13, 43, 1);
+}
+
+header, section, footer {
     padding: 60px 120px 80px;
 }
 
