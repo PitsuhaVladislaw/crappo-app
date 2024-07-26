@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import '../style/inputText.css'
 
 export default function FormMining() {
     const [email, setEmail] = useState('');
@@ -24,7 +25,7 @@ export default function FormMining() {
             />
             <button
                 type="submit"
-                className="rounded-full bg-white w-40 h-14 px-8 py-[14px]"
+                className="rounded-full bg-white w-40 h-14 px-3 py-[14px]"
             >
                 <p className="w-auto h-auto text-center text-base font-medium leading-7 text-gray-900">
                     Subscribe

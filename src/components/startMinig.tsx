@@ -4,8 +4,8 @@ import FormMining from "@/utils/FormMining";
 
 export default function StartMining() {
     return(
-        <section className="flex-col my-[88px] flex justify-center items-center bg-gradient-to-b from-purple-900 to-black w-auto">
-            <div className="flex items-center justify-between bg-blue-500 rounded-lg p-12 relative overflow-hidden">
+        <section className="flex flex-col justify-center items-center bg-gradient-to-b from-purple-800 to-rgba-13-13-43-1">
+            <div className="flex items-center justify-between bg-blue-500 rounded-lg p-12 relative overflow-hidden gap-12">
                 <article className="flex flex-col items-start gap-4">
                     <h4 className="font-rubik text-white text-3xl font-bold leading-12 text-left">
                         Start mining now
