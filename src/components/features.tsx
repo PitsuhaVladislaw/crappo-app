@@ -1,4 +1,5 @@
 import BitcoinGraf from "./bitcoinGraf";
+import GrowProfit from "./growProfit";
 
 type descProps = {
     id: number;
@@ -70,6 +71,7 @@ export default function Features() {
             </article>
             <article className="flex mt-5">
                 <Description id={3} title="" desc="" link="" />
+                <GrowProfit />
             </article>
         </section>
     )

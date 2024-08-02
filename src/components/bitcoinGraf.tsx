@@ -79,10 +79,25 @@ const BitcoinGraf = () => {
 
     return (
         <div className="relative w-[580px] h-[427px] ml-24">
-            <div className="flex flex-col bg-blue-800 rounded-2xl w-[580px] h-[298px] absolute top-0 left-0">
+            <div className="flex flex-col bg-blue-800 rounded-2xl w-[580px] h-[298px] absolute top-0 left-0  p-10">
                 <div className="flex justify-between items-center">
                     <div className="flex items-start gap-4">
+                        <div className="">
 
+                        </div>
+                        <div className="flex flex-col items-start gap-1">
+                            <div className="flex items-center gap-2">
+                                <h5 className="font-inter leading-[29.05px] text-white">
+                                    Bitcoin
+                                </h5>
+                                <h6 className="font-inter leading-[19.36px] text-gray-500">
+                                    BTC
+                                </h6>
+                            </div>
+                            <p className="font-inter text-p font-p leading-[16.94px] tracking-[0.01em] text-gray-300">
+                                {} BTC
+                            </p>
+                        </div>
                     </div>
                     <h5 className="font-inter text-base font-medium text-right text-green-400">
                         {priceIncrease} %

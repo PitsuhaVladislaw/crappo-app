@@ -17,3 +17,7 @@ input:focus {
     border: none;
     background: transparent;
 }
+
+.bg-custom {
+    background-color: rgba(53, 6, 140, 1);
+}
