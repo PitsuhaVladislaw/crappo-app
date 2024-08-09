@@ -1,14 +1,10 @@
+import { DescProps } from "@/types/DescProps";
 import BitcoinGraf from "./bitcoinGraf";
 import GrowProfit from "./growProfit";
 
-type descProps = {
-    id: number;
-    title: string;
-    desc: string;
-    link: string;
-}
 
-const descArray: descProps[] = [
+
+const descArray: DescProps[] = [
     {
         id: 1,
         title: "Grow your profit and track your investments",
@@ -29,7 +25,7 @@ const descArray: descProps[] = [
     }
 ]
 
-export const Description: React.FC<descProps> = ({id}) => {
+export const Description: React.FC<DescProps> = ({id}) => {
     const item = descArray.find(item => item.id === id);
 
     if(!item) {

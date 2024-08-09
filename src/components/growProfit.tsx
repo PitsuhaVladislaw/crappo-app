@@ -5,17 +5,7 @@ import { LuBitcoin } from "react-icons/lu";
 import { FaEthereum } from "react-icons/fa";
 import { FaLitecoinSign } from "react-icons/fa6";
 import { getBitcoinPrice, getEthereumPrice, getLitecoinPrice } from '../utils/criptoApi';
-import { IconType } from 'react-icons';
-
-type CriptoArrayItems = {
-    icon: IconType;
-    color: string;
-    short: string;
-    title: string;
-    price: () => React.ReactNode;
-    change: () => React.ReactNode;
-    volume: () => React.ReactNode;
-}
+import { CriptoArrayItems } from '@/types/CriptoArrayItems';
 
 const criptoArray: CriptoArrayItems[] = [
     {

@@ -1,25 +1,8 @@
-import axios from "axios";
+import { FetchBitcoinData } from "@/utils/FetchBitcoinData";
 import { Chart, ChartConfiguration, registerables } from "chart.js";
 import { useEffect, useState, useRef } from "react";
 
 Chart.register(...registerables);
-
-interface BitcoinData {
-    bitcoin: {
-        usd: number;
-    };
-}
-
-export async function fetchBitcoinData(): Promise<BitcoinData | null> {
-    try {
-        const response = await axios.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd");
-        const bitcoinData: BitcoinData = response.data;
-        return bitcoinData;
-    } catch (error) {
-        console.error('Error fetching Bitcoin data: ', error);
-        return null;
-    }
-}
 
 const BitcoinGraf = () => {
     const [bitcoinData, setBitcoinData] = useState<number[]>([]);
@@ -29,7 +12,7 @@ const BitcoinGraf = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const data = await fetchBitcoinData();
+            const data = await FetchBitcoinData();
             if (data) {
                 setBitcoinData(prevData => [...prevData, data.bitcoin.usd]);
             }

@@ -2,6 +2,7 @@ import { LuBitcoin } from "react-icons/lu";
 import { FaEthereum} from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
 import { FaLitecoinSign } from "react-icons/fa6";
+import { CriptoCardProps } from "@/types/CriptoCardProps";
 
 export function ButtonCripto() {
     return (
@@ -9,14 +10,6 @@ export function ButtonCripto() {
             <FaAngleRight className="w-7 h-7 text-blue-600" />
         </button>
     )
-}
-
-type CriptoCardProps = {
-    img: any;
-    title: string;
-    text: string;
-    symbol: string;
-    color: string;
 }
 
 const criptoCardArray: CriptoCardProps[] = [
