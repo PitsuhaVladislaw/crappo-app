@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Square from '../assets/img/square-3d.png'
 import FormMining from "@/utils/FormMining";
+import BitcoinIcon from "../assets/img/bitcoinIcon.png"
 
 export default function StartMining() {
     return(
@@ -19,6 +20,11 @@ export default function StartMining() {
                     src={Square} 
                     alt="square" 
                     className="absolute -top-11 left-6 w-auto h-auto"
+                />
+                <Image 
+                    src={BitcoinIcon}
+                    alt="bitcoinIcon"
+                    className="absolute bottom-0 right-4 w-auto h-auto"
                 />
             </div>
         </section>
