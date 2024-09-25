@@ -1,0 +1,47 @@
+h4 {
+  border-bottom: 1px solid rgb(13, 13, 43);
+  transition: border-bottom-color 0.3s ease;
+}
+
+h4:hover {
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+
+.hoverCriptoCard:hover {
+  background-color: rgb(43, 7, 110);
+}
+.hoverCriptoCard:hover div h2 {
+  color: white;
+}
+.hoverCriptoCard:hover p {
+  color: white;
+}
+.hoverCriptoCard:hover button {
+  cursor: pointer;
+  border-color: rgb(54, 113, 233);
+  background-color: rgb(54, 113, 233);
+}
+.hoverCriptoCard:hover button svg {
+  color: rgb(54, 113, 233);
+  border-radius: 100px;
+  background: white;
+  padding: 5px;
+}
+
+.titleQuickLink {
+  border-bottom: 1px solid rgb(13, 13, 43);
+}
+
+.titleQuickLink:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.payments:hover {
+  cursor: pointer;
+  outline: 1px solid white;
+  border-radius: 10%;
+  color: rgb(13, 13, 43);
+  background-color: white;
+}/*# sourceMappingURL=hoverAnima.css.map */
