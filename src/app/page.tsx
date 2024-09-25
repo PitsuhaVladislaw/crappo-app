@@ -12,12 +12,14 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <Header />
-      <WhyCrappo />
-      <TradeSecurely />
-      <Features />
-      <StartMining />
-      <Footer />
+      <main>
+        <Header />
+        <WhyCrappo />
+        <TradeSecurely />
+        <Features />
+        <StartMining />
+        <Footer />
+      </main>
     </>
   );
 }

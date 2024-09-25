@@ -8,9 +8,9 @@ export default function StartMining() {
         <section className="flex flex-col justify-center items-center bg-gradient-to-b from-purple-800 to-rgba-13-13-43-1">
             <div className="flex items-center justify-between bg-blue-500 rounded-lg p-12 relative overflow-hidden gap-12">
                 <article className="flex flex-col items-start gap-4">
-                    <h4 className="font-rubik text-white text-3xl font-bold leading-12 text-left">
+                    <h3 className="font-rubik text-white text-3xl font-bold leading-12 text-left">
                         Start mining now
-                    </h4>
+                    </h3>
                     <p className="text-white text-base font-normal leading-7 tracking-tighter text-left w-[348px]">
                         Join now with CRAPPO to get the latest news and start mining now
                     </p>

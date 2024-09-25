@@ -46,9 +46,9 @@ const BitcoinGraf = () => {
                 <div ref={chartRef} className="w-full h-[80%]"></div>
             </div>
             <div className="flex flex-col py-6 px-4 items-start rounded-2xl gap-4 shadow-lg bg-purple-700 absolute bottom-4 left-16 z-10 h-[184px] w-[178px]">
-                <h4 className="font-inter text-lg font-semibold leading-7 tracking-tight text-left text-white">
+                <h3 className="font-inter text-lg font-semibold leading-7 tracking-tight text-left text-white">
                     Increase in Trade
-                </h4>
+                </h3>
                 <h3 className="font-inter text-xl font-bold leading-7 tracking-tight text-left text-white">
                     {percentageChange}%
                 </h3>

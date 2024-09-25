@@ -1,8 +1,10 @@
 import { getBitcoinPrice, getEthereumPrice, getLitecoinPrice } from "./criptoPrice";
 
-let preBitcoinPrice: number | null = null;
-let preEthereumPrice: number | null = null;
-let preLitecoinPrice: number | null = null;
+const previousPrices = {
+    bitcoin: null as number | null,
+    ethereum: null as number | null,
+    litecoin: null as number | null
+}
 
 function calculateChange(prevPrice: number | null, curPrice: number): string {
     if (prevPrice === null) {
@@ -20,24 +22,24 @@ function calculateChange(prevPrice: number | null, curPrice: number): string {
 
 export async function getBitcoinChange() {
     const price = await getBitcoinPrice();
-    const change = calculateChange(preBitcoinPrice, price);
+    const change = calculateChange(previousPrices.bitcoin, price);
 
-    preBitcoinPrice = price;
+    previousPrices.bitcoin = price;
     return change;
 }
 
 export async function getEthereumChange() {
     const price = await getEthereumPrice();
-    const change = calculateChange(preEthereumPrice, price);
+    const change = calculateChange(previousPrices.ethereum, price);
     
-    preEthereumPrice = price;
+    previousPrices.ethereum = price;
     return change;
 }
 
 export async function getLitecoinChange() {
     const price = await getLitecoinPrice();
-    preLitecoinPrice = price;
-    const change = calculateChange(preLitecoinPrice, price);
+    const change = calculateChange(previousPrices.litecoin, price);
+    previousPrices.litecoin = price;
 
     return change;
 }

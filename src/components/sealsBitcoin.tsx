@@ -1,29 +1,5 @@
-
+import { ownPriceArray } from "@/types/TypePrice";
 import { GetSealsCripto } from "@/utils/getSealsCripto";
-
-type Props = {
-    price: () => React.ReactNode;
-    title: string;
-};
-
-const ownPriceArray: Props[] = [
-    {
-        price: () => <span></span>,
-        title: "Trends"
-    },
-    {
-        price: () => <span></span>,
-        title: "Total amount"
-    },
-    {
-        price: () => <span></span>,
-        title: "High"
-    },
-    {
-        price: () => <span></span>,
-        title: "Low"
-    },
-];
 
 const SealsBitcoin: React.FC = () => {
     const chartRef = GetSealsCripto();

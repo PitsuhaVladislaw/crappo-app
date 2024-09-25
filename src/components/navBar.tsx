@@ -1,4 +1,4 @@
-
+import '../style/hoverAnima.css'
 import LogoImg from '../assets/img/Logo.png'
 import Logo from './logo'
 
@@ -9,7 +9,7 @@ export default function NavBar() {
             <article className="flex items-center gap-14">
                 <div className="flex items-center gap-8">
                     {["Products", "Features", "About", "Contact"].map((text, index) => (
-                        <h4 key={index} className="text-base font-normal leading-7 tracking-tight text-left text-white">
+                        <h4 key={index} className="text-base font-normal leading-7 tracking-tight text-left text-white border-b">
                             {text}
                         </h4>
                     ))}

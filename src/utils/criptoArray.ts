@@ -4,7 +4,7 @@ import { FaLitecoinSign } from "react-icons/fa6";
 import { getBitcoinPrice, getEthereumPrice, getLitecoinPrice } from '../utils/criptoPrice';
 import { CriptoArrayItems } from '@/types/CriptoArrayItems';
 import { getBitcoinVolume, getEtrhreumVolume, getLitecoinVolume } from "./criptoVolume";
-import { getBitcoinChange, getEthereumChange } from "./criptoChange";
+import { getBitcoinChange, getEthereumChange, getLitecoinChange } from "./criptoChange";
 
 export const  criptoArray: CriptoArrayItems[] = [
     {
@@ -31,7 +31,7 @@ export const  criptoArray: CriptoArrayItems[] = [
         short: "LTC",
         title: "Litecoin",
         price: () => getLitecoinPrice(),
-        change: () => getLitecoinVolume(),
+        change: () => getLitecoinChange(),
         volume: () => getLitecoinVolume() 
     },
 ];

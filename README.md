@@ -13,3 +13,6 @@
 - [ ] to make AUTHORIZATION
 - [ ] to make LOGIN 
 - [ ] to add links for all buttons LEARN MORE of pages
+- [ ] to add 2 buttons:
+- [ ] BUTTONS %
+- [ ] BUTTONS Try For Free

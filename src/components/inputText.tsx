@@ -1,11 +1,29 @@
+import React, { useEffect, useState } from 'react';
 import { CriptoArrayItems } from '@/types/CriptoArrayItems';
-import React from 'react';
 
 const InputText: React.FC<CriptoArrayItems> = ({ icon, color, short, title, price, change, volume }): JSX.Element => {
+    const [priceValue, setPriceValue] = useState<string>("");
+    const [changeValue, setChangeValue] = useState<string>("");
+    const [volumeValue, setVolumeValue] = useState<string>("");
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const priceResult = await price();
+            const changeResult = await change();
+            const volumeResult = await volume();
+
+            setPriceValue(`$${priceResult}`);
+            setChangeValue(`${changeResult}%`);
+            setVolumeValue(`$${volumeResult}`);
+        }
+
+        fetchData();
+    }, [price, change, volume]);
+    
     return (
         <div className='table-row'>
             <div className='flex items-center gap-4'>
-                <div style={{backgroundColor: color}} className="icon-block">
+                <div style={{ backgroundColor: color }} className="icon-block">
                     {React.createElement(icon)}
                 </div>
                 <div className='flex flex-col items-start gap-1'>
@@ -17,23 +35,15 @@ const InputText: React.FC<CriptoArrayItems> = ({ icon, color, short, title, pric
                     </h3>
                 </div>
             </div>
-            <div className='table-cell'>
-                <h4 className='font-inter text-lg font-normal leading-relaxed text-left text-gray-300'>
-                    ${price()}
-                </h4>
-            </div>
-            <div className='table-cell'>
-                <h4 className='font-inter text-lg font-normal leading-relaxed text-left text-gray-300'>
-                    {change()}
-                </h4>
-            </div>
-            <div className='table-cell'>
-                <h4 className='font-inter text-lg font-normal leading-relaxed text-left text-gray-300'>
-                    ${volume()}
-                </h4>
-            </div>
+            {[priceValue, changeValue, volumeValue].map((value, index) => (
+                <div className='table-cell' key={index}>
+                    <h5 className='font-inter text-lg font-normal leading-relaxed text-left text-gray-300'>
+                        {value}
+                    </h5>
+                </div>
+            ))}
         </div>
-    )
+    );
 }
 
 export default InputText;

@@ -1,64 +1,7 @@
-import { LuBitcoin } from "react-icons/lu";
-import { FaEthereum} from "react-icons/fa";
-import { FaAngleRight } from "react-icons/fa";
-import { FaLitecoinSign } from "react-icons/fa6";
-import { CriptoCardProps } from "@/types/CriptoCardProps";
+import { criptoCardArray } from "@/types/CriptoCardProps";
+import { CriptoCard } from "./criptoCard";
 
-export function ButtonCripto() {
-    return (
-        <button className="flex justify-center items-center rounded-full w-16 h-16 border-2 border-solid border-purple-700 border-opacity-20 mt-9">
-            <FaAngleRight className="w-7 h-7 text-blue-600" />
-        </button>
-    )
-}
-
-const criptoCardArray: CriptoCardProps[] = [
-    {
-        img: LuBitcoin,
-        title: "Bitcoin",
-        text: "Digital currency in which a record of transactions is maintained.",
-        symbol: "BTC",
-        color: "bg-blue-600"
-    },
-    {
-        img: FaEthereum,
-        title: "Ethereum",
-        text: "Blockchain technology to create and run decentralized digital applications.",
-        symbol: "ETH",
-        color: "bg-yellow-500"
-    },
-    {
-        img: FaLitecoinSign,
-        title: "Litecoin",
-        text: "Cryptocurrency that enables instant payments to anyone in the world.",
-        symbol: "LTC",
-        color: "bg-gray-400"
-    }
-];
-
-export const CriptoCard: React.FC<CriptoCardProps> = ({ img, title, text, symbol, color }) => {
-    return (
-        <article className="flex flex-col items-center rounded-2xl shadow-button bg-white gap-4 h-auto w-auto py-12 px-6">
-            <div className={`flex items-center justify-center w-20 h-20 rounded-full ${color}`}>
-                {img({className: `w-12 h-12 text-white`})}
-            </div>
-            <div className="flex items-center gap-2 justify-center mt-9">
-                <h2 className="text-center text-gray-900 text-2xl font-bold leading-12">
-                    {title}
-                </h2>
-                <h5 className="text-center text-gray-700 text-lg font-medium leading-7">
-                    {symbol}
-                </h5>
-            </div>
-            <p className="text-center text-body-small font-rubik text-base font-normal leading-7 tracking-tighter w-80">
-                {text}
-            </p>
-            <ButtonCripto />
-        </article>
-    )
-}
-
-export default function TradeSecurely() {
+const TradeSecurely = () => {
     return (
         <section className="flex flex-col items-center bg-neutral-light p-0">
             <article className="flex flex-col items-center justify-center bg-[rgba(13, 13, 43, 1)] my-10 gap-6">
@@ -89,3 +32,5 @@ export default function TradeSecurely() {
         </section>
     )
 }
+
+export default TradeSecurely;
