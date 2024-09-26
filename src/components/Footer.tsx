@@ -1,7 +1,7 @@
 import LogoImg from '../assets/img/Logo.png'
 import Logo from "./logo";
 import QuickLinks from "./quickLinks";
-import { iconsArray, paymentArray } from "@/types/TypeLinks";
+import { handleClick, iconsArray, paymentArray } from "@/types/TypeLinks";
 
 export default function Footer() {
     
@@ -22,6 +22,7 @@ export default function Footer() {
                                     key={index}
                                     >
                                     <obj.icon 
+                                        onClick={() => handleClick(obj.link)}
                                         key={index}
                                         className="w-12 h-12 text-white z-10 p-1 payments"
                                     />
@@ -38,8 +39,9 @@ export default function Footer() {
                 <div className="flex gap-8 items-center justify-between w-auto h-auto">
                     {iconsArray.map((obj, index) => (
                         <obj.icon
+                            onClick={() => handleClick(obj.link)}
                             key={index}
-                            className="w-6 h-6 text-white relative cursor-pointer"
+                            className="w-6 h-6 text-white relative cursor-pointe svgSocialIcons"
                         />
                     ))}
                 </div>

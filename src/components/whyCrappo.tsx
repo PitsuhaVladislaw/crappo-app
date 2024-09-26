@@ -2,6 +2,7 @@ import Image from "next/image";
 import Img from "../assets/img/Illustrations.png";
 import { IoPerson, IoBarChart, IoEarthSharp } from "react-icons/io5";
 import { IconType } from "react-icons";
+import '../style/hoverAnima.css'
 
 interface ButtonProps {
     text: string;
@@ -27,7 +28,7 @@ export const numsArray = [
 
 export const Button: React.FC<ButtonProps> = ({ text }) => {
     return (
-        <button className="w-auto h-auto p-4 gap-6 rounded-3xl bg-blue-500 ">
+        <button className="w-auto h-auto p-4 gap-6 rounded-3xl bg-blue-500 hoverButton">
             <h6 className="text-base font-medium leading-27 text-center text-white">{text}</h6>
         </button>
     );

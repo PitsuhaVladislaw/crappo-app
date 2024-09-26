@@ -8,40 +8,44 @@ export type IconNetworks = {
     link: string;
 }
 
+export const handleClick = (link: string): void => {
+    window.open(link, '_blank');
+}
+
 export const iconsArray: IconNetworks[] = [
     {
         icon: FaFacebook,
-        link: ""
+        link: "https://www.facebook.com"
     },
     {
         icon: FaInstagram,
-        link: ""
+        link: "https://www.instagram.com"
     },
     {
         icon: FaYoutube,
-        link: ""
+        link: "https://www.vk.com"
     },
     {
         icon: FaLinkedin,
-        link: ""
+        link: "https://www.youtube.com"
     },
     {
         icon: FaSquareXTwitter,
-        link: ""
+        link: "https://www.twitter.com"
     },
 ];
 
 export const paymentArray: IconNetworks[] = [
     {
         icon: SiVisa,
-        link: ""
+        link: "https://www.visa.com/"
     }, 
     {
         icon: FaCcMastercard,
-        link: ""
+        link: "https://www.mastercard.com/"
     },
     {
         icon: FaBitcoin,
-        link: ""
+        link: "https://bitpay.com/"
     }
 ];

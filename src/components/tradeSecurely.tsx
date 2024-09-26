@@ -1,7 +1,7 @@
 import { criptoCardArray } from "@/types/CriptoCardProps";
 import { CriptoCard } from "./criptoCard";
 
-const TradeSecurely = () => {
+const  TradeSecurely = () => {
     return (
         <section className="flex flex-col items-center bg-neutral-light p-0">
             <article className="flex flex-col items-center justify-center bg-[rgba(13, 13, 43, 1)] my-10 gap-6">
@@ -19,12 +19,12 @@ const TradeSecurely = () => {
                 <div className="flex flex-wrap justify-around gap-[45px]">
                     {criptoCardArray.map((obj, index) => (
                         <CriptoCard
+                            id={obj.id}
                             key={index}
                             img={obj.img}
                             text={obj.text}
                             title={obj.title}
                             symbol={obj.symbol}
-                            color={obj.color}
                         />
                     ))}
                 </div>

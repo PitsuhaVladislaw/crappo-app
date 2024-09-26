@@ -44,4 +44,23 @@ h4:hover {
   border-radius: 10%;
   color: rgb(13, 13, 43);
   background-color: white;
+}
+
+.svgSocialIcons {
+  border: 1px solid rgb(13, 13, 43);
+  border-radius: 25%;
+}
+
+.svgSocialIcons:hover {
+  border-color: white;
+  color: rgb(13, 13, 43);
+  background-color: white;
+  cursor: pointer;
+}
+
+.hoverButton:hover {
+  background: white;
+}
+.hoverButton:hover h6 {
+  color: rgb(54, 113, 233);
 }/*# sourceMappingURL=hoverAnima.css.map */

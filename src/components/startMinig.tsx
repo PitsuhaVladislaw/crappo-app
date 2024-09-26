@@ -3,7 +3,7 @@ import Square from '../assets/img/square-3d.png'
 import FormMining from "@/utils/FormMining";
 import BitcoinIcon from "../assets/img/bitcoinIcon.png"
 
-export default function StartMining() {
+function StartMining() {
     return(
         <section className="flex flex-col justify-center items-center bg-gradient-to-b from-purple-800 to-rgba-13-13-43-1">
             <div className="flex items-center justify-between bg-blue-500 rounded-lg p-12 relative overflow-hidden gap-12">
@@ -30,3 +30,5 @@ export default function StartMining() {
         </section>
     )
 }
+
+export default StartMining;
