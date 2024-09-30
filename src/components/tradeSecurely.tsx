@@ -25,6 +25,7 @@ const  TradeSecurely = () => {
                             text={obj.text}
                             title={obj.title}
                             symbol={obj.symbol}
+                            link={obj.link}
                         />
                     ))}
                 </div>

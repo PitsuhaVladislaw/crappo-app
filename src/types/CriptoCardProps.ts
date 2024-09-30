@@ -8,6 +8,7 @@ export type CriptoCardProps = {
     title: string;
     text: string;
     symbol: string;
+    link: string;
 }
 
 export const criptoCardArray: CriptoCardProps[] = [
@@ -16,20 +17,23 @@ export const criptoCardArray: CriptoCardProps[] = [
         img: LuBitcoin,
         title: "Bitcoin",
         text: "Digital currency in which a record of transactions is maintained.",
-        symbol: "BTC"
+        symbol: "BTC",
+        link: ""
     },
     {   
         id: 2,
         img: FaEthereum,
         title: "Ethereum",
         text: "Blockchain technology to create and run decentralized digital applications.",
-        symbol: "ETH"
+        symbol: "ETH",
+        link: ""
     },
     {
         id: 3,
         img: FaLitecoinSign,
         title: "Litecoin",
         text: "Cryptocurrency that enables instant payments to anyone in the world.",
-        symbol: "LTC"
+        symbol: "LTC",
+        link: ""
     }
 ];
