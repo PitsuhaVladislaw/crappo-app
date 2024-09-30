@@ -21,3 +21,11 @@ input:focus {
 .bg-custom {
     background-color: rgba(53, 6, 140, 1);
 }
+
+.inputButHover:hover {
+    background-color: blue;
+}
+
+.inputButHover:hover p {
+    color: white;
+}

@@ -59,7 +59,7 @@ h4:hover {
 }
 
 .hoverButton:hover {
-  background: white;
+  background-color: white;
 }
 .hoverButton:hover h6 {
   color: rgb(54, 113, 233);

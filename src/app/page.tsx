@@ -10,7 +10,7 @@ import Features from "@/components/features";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <NavBar />
       <main>
         <Header />
@@ -20,6 +20,6 @@ export default function Home() {
         <StartMining />
         <Footer />
       </main>
-    </>
+    </div>
   );
 }

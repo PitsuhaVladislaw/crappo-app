@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import '../style/inputText.css';
-import '../style/hoverAnima.css';
 
 export default function FormMining() {
     const [email, setEmail] = useState('');
@@ -26,7 +25,7 @@ export default function FormMining() {
             />
             <button
                 type="submit"
-                className={`rounded-full bg-white w-40 h-14 px-3 py-[14px] hover:bg-blue-900`}
+                className="rounded-full bg-white w-40 h-14 px-3 py-[14px] inputButHover"
             >
                 <p className="w-auto h-auto text-center text-base font-medium leading-7 text-gray-900">
                     Subscribe
