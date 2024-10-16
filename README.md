@@ -16,3 +16,10 @@
 - [ ] to add 2 buttons:
 - [ ] BUTTONS %
 - [ ] BUTTONS Try For Free
+- [ ] to add links of layout
+- [ ] to make pages
+- Bitcoin
+- Ethereum
+- Litecoin
+- [ ] to finish massives
+- [ ] to add graphics for pages
