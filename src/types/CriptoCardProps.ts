@@ -1,10 +1,11 @@
 import { LuBitcoin } from "react-icons/lu";
 import { FaEthereum} from "react-icons/fa";
 import { FaLitecoinSign } from "react-icons/fa6";
+import { IconType } from "react-icons";
 
 export type CriptoCardProps = {
     id: number;
-    img: any;
+    img: IconType;
     title: string;
     text: string;
     symbol: string;

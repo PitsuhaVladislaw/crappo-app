@@ -1,29 +1,6 @@
 import { CriptoCardProps } from "@/types/CriptoCardProps";
-import { FaAngleRight } from "react-icons/fa";
+import ButtonCripto from "./buttonCripto";
 import '../style/hoverAnima.css';
-import Link from "next/link";
-
-export function ButtonCripto({link}: {link: string}) {
-    const handleClick = (link: string): void => {
-        window.location.href = link;
-    }
-    
-    return (
-        <button 
-            className="flex justify-center items-center rounded-full w-16 h-16 border-2 border-solid border-purple-700 border-opacity-20 mt-9 criptoHoverBut"
-            onClick={() => handleClick(link)}
-        >
-            <Link href={link}>
-                <span 
-                    className="text-white font-bold "
-                >
-                    Learn More
-                </span>
-                <FaAngleRight className="w-7 h-7 text-blue-600" />
-            </Link>
-        </button>
-    );
-}
 
 export const CriptoCard: React.FC<CriptoCardProps> = ({ id, img: ImgComponent, title, text, symbol, link }) => {
     const getColor = (id: number) => {

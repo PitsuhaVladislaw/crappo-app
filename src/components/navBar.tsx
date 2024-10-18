@@ -4,7 +4,7 @@ import Logo from './logo'
 
 export default function NavBar() {
     return (
-        <section className="flex justify-between items-center">
+        <section className="flex justify-between items-center sticky top-0 left-0 z-50 navColor">
             <Logo logo={LogoImg} />
             <article className="flex items-center gap-14">
                 <div className="flex items-center gap-8">
