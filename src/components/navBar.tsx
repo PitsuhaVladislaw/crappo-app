@@ -1,16 +1,24 @@
 import '../style/hoverAnima.css'
 import LogoImg from '../assets/img/Logo.png'
 import Logo from './logo'
+import { propsNavBar } from '@/types/PropsNavBar'
+import HandleScroll from '@/utils/handleScroll'
 
 export default function NavBar() {
+    const activeSection = HandleScroll();
+
     return (
         <section className="flex justify-between items-center sticky top-0 left-0 z-50 navColor">
             <Logo logo={LogoImg} />
             <article className="flex items-center gap-14">
                 <div className="flex items-center gap-8">
-                    {["Products", "Features", "About", "Contact"].map((text, index) => (
-                        <h4 key={index} className="text-base font-normal leading-7 tracking-tight text-left text-white border-b">
-                            {text}
+                    {propsNavBar.map((obj, index) => (
+                        <h4 
+                            key={index} 
+                            className="text-base font-normal leading-7 tracking-tight text-left text-white border-b"
+                            onClick={obj.onClick}
+                        >
+                            {obj.title}
                         </h4>
                     ))}
                 </div>

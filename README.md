@@ -2,24 +2,24 @@
 
 ### To finish task for the ending project:
 
-- [ ] to add hovering
-- [ ] to add links for NAVBAR
-- [ ] to add animations
-- [ ] to make page-description for all kriptocoins
-- [ ] To finish the second GRAFIK and to add all items
-- [ ] to make section of calculate
-- [ ] to change the first GRAFIK
-- [ ] to make working links
+- [ x] to add hovering
+- [ x ] to add links for NAVBAR
+- [ x ] to add animations
+- [ x ] to make page-description for all kriptocoins
+- [ x ] To finish the second GRAFIK and to add all items
+- [ x ] to make section of calculate
+- [ x ] to change the first GRAFIK
+- [ x ] to make working links
 - [ ] to make AUTHORIZATION
 - [ ] to make LOGIN 
-- [ ] to add links for all buttons LEARN MORE of pages
-- [ ] to add 2 buttons:
-- [ ] BUTTONS %
-- [ ] BUTTONS Try For Free
-- [ ] to add links of layout
-- [ ] to make pages
+- [ x] to add links for all buttons LEARN MORE of pages
+- [ x] to add 2 buttons:
+- [x ] BUTTONS %
+- [ x] BUTTONS Try For Free
+- [ x ] to add links of layout
+- [ x ] to make pages
 - Bitcoin
 - Ethereum
 - Litecoin
-- [ ] to finish massives
-- [ ] to add graphics for pages
+- [ x ] to finish massives
+- [ x ] to add graphics for pages

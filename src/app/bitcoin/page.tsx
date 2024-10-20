@@ -1,12 +1,12 @@
 "use client"
 
-import { infaBitcoin } from "@/types/TypeInfaSect";
+import React from 'react';
 import InfoPage from "@/components/infoPage";
-import "../../style/coinPage.css";
-import Footer from "@/components/footer";
-import NavBar from "@/components/navBar";
+import { infaBitcoin } from '@/types/TypeInfaSect';
+import NavBar from '@/components/navBar';
+import Footer from '@/components/footer';
 
-const BitcoinPage = () => {
+const BitcoinPage: React.FC = () => {
     return(
         <div>
             <NavBar />

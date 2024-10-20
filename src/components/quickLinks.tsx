@@ -1,10 +1,11 @@
+import { propsNavBar } from '@/types/PropsNavBar';
 import '../style/hoverAnima.css'
 
 function QuickLinks () {
     const arrayLinks = [
         {    
             title: "Quick Link",
-            array: ["Home", "Products", "About ", "Features", "Contact"]
+            array: propsNavBar
         },
         {
             title: "Resources",
@@ -19,12 +20,13 @@ function QuickLinks () {
                     {obj.title}
                 </h5>
                 <div key={index} className="flex flex-col items-start gap-1 mb-[1px] ">
-                    {obj.array.map((text, key) =>(
+                    {obj.array.map((item, key) =>(
                         <h6 
+                            onClick={typeof item === 'object' ? item.onClick : undefined}
                             key={key} 
                             className="font-rubik text-base font-normal leading-[38px] text-left text-[#F2F2F2] cursor-pointer titleQuickLink"
                         >
-                            {text}
+                            {typeof item === 'string' ? item : item.title}
                         </h6>
                     ))}
                 </div>

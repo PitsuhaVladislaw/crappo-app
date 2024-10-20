@@ -36,7 +36,7 @@ export const Button: React.FC<ButtonProps> = ({ text }) => {
 
 export default function WhyCrappo() {
     return (
-        <section className="flex flex-col gap-24">
+        <section id="About" className="flex flex-col gap-24">
             <article className="flex justify-between w-auto h-92">
                 {numsArray.map((obj, index) => {
                     const IconComponent = obj.icon as IconType;

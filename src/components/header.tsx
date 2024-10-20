@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Header() {
     return(
-        <header className="h-auto w-auto flex flex-row">
+        <section id='Home' className="h-auto w-auto flex flex-row">
             <article className="flex flex-col items-start gap-6 w-auto m-20">
                 <h2 className="text-5xl font-bold leading-76 text-left text-white w-[588px]">
                     Fastest & secure platform to invest in crypto
@@ -17,6 +17,6 @@ export default function Header() {
                 src={Blockchain}
                 alt="Blockchain"
             />
-        </header>
+        </section>
     )
 }

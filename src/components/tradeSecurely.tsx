@@ -3,7 +3,7 @@ import { CriptoCard } from "./criptoCard";
 
 const  TradeSecurely = () => {
     return (
-        <section className="flex flex-col items-center bg-neutral-light p-0">
+        <section id="Products" className="flex flex-col items-center bg-neutral-light p-0">
             <article className="flex flex-col items-center justify-center bg-[rgba(13, 13, 43, 1)] my-10 gap-6">
                 <h2 className="text-center text-white text-4xl font-bold leading-60">
                     Check how much you can earn

@@ -7,7 +7,7 @@ const GrowProfit = lazy(() => import("./growProfit"));
 
 const Features = () => {
     return (
-        <section className="flex flex-col items-center gap-25 bg-gradient-to-b from-purple-900 to-purple-800">
+        <section id='Features' className="flex flex-col items-center gap-25 bg-gradient-to-b from-purple-900 to-purple-800">
             <h1 className="w-[758px] font-rubik text-4xl font-bold leading-60 text-center text-white mb-24">
                 Market sentiments, portfolio, and run the infrastructure of your choice
             </h1>

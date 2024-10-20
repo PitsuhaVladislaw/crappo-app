@@ -1,3 +1,13 @@
+import BitcoinChart from "@/app/bitcoin/components/BitcoinChart";
+import BitcoinGraphic from "@/app/bitcoin/components/BitcoinGraphic";
+import BitcoinRingChart from "@/app/bitcoin/components/BitcoinRingChart";
+import EthereumChart from "@/app/ethereum/components/EthereumChart";
+import EthereumGraphic from "@/app/ethereum/components/EthereumGraphic";
+import EthereumRingChart from "@/app/ethereum/components/EthereumRingChart";
+import LitecoinChart from "@/app/litecoin/components/LitecoinChart";
+import LitecoinGraphic from "@/app/litecoin/components/LitecoinGraphic";
+import LitecoinRingChart from "@/app/litecoin/components/LitecoinRingChart";
+
 export type ObjectInfo = {
     title: string;
     text1: string;
@@ -6,13 +16,13 @@ export type ObjectInfo = {
 }
 
 export type TypeInfaSect = {
-    iconName: string;
+    graphic: React.FC<{}>;
     info: ObjectInfo;
 }
 
 export const infaBitcoin: TypeInfaSect[] = [
     {
-        iconName: "Bitcoin1",
+        graphic: BitcoinGraphic,
         info: {
             title: "History of creation",
             text1: "Bitcoin was created in 2009 by a person or group of people under the pseudonym Satoshi Nakamoto. It is the first decentralized digital currency that allowed users to make transactions directly without intermediaries.",
@@ -21,7 +31,7 @@ export const infaBitcoin: TypeInfaSect[] = [
         }
     },
     {
-        iconName: "Bitcoin2",
+        graphic: BitcoinRingChart,
         info: {
             title: "Future Predictions",
             text1: "Bitcoin is most popular in countries such as the United States, Canada, Japan, and South Korea. These countries are actively developing blockchain and cryptocurrency technologies.",
@@ -30,7 +40,7 @@ export const infaBitcoin: TypeInfaSect[] = [
         }
     },
     {
-        iconName: "Bitcoin3",
+        graphic: BitcoinChart,
         info: {
             title: "Popular Countries",
             text1: "In the future, Bitcoin is expected to continue to grow in popularity and be used as an alternative means of investment and payment. Many experts predict further increases in value and adoption in various sectors of the economy.",
@@ -42,7 +52,7 @@ export const infaBitcoin: TypeInfaSect[] = [
 
 export const infaEthereum: TypeInfaSect[] = [
     {
-        iconName: "Ethereum1",
+        graphic: EthereumGraphic,
         info: {
             title: "History of Creation",
             text1: "Ethereum was created by Vitalik Buterin in 2015. It is the first blockchain platform that allowed the development and deployment of smart contracts and decentralized applications.",
@@ -51,7 +61,7 @@ export const infaEthereum: TypeInfaSect[] = [
         }
     },
     {
-        iconName: "Ethereum2",
+        graphic: EthereumRingChart,
         info: {
             title: "Future Predictions",
             text1: "Ethereum is most popular in countries with developed technological infrastructure, such as the USA, Germany, Singapore, and Switzerland.",
@@ -60,7 +70,7 @@ export const infaEthereum: TypeInfaSect[] = [
         }
     },
     {
-        iconName: "Ethereum3",
+        graphic: EthereumChart,
         info: {
             title: "Popular Countries",
             text1: "Ethereum is widely used in many countries around the world, especially in those where fintech and blockchain technologies are actively developing.",
@@ -72,7 +82,7 @@ export const infaEthereum: TypeInfaSect[] = [
 
 export const infaLitecoin: TypeInfaSect[] = [
     {
-        iconName: "Litecoin1",
+        graphic: LitecoinGraphic,
         info: {
             title: "History of Creation",
             text1: "Litecoin was created by Charlie Lee in 2011 as a 'lite' version of Bitcoin. The goal was to create a cryptocurrency that would be faster and more accessible for everyday transactions.",
@@ -81,7 +91,7 @@ export const infaLitecoin: TypeInfaSect[] = [
         }
     },
     {
-        iconName: "Litecoin2",
+        graphic: LitecoinRingChart,
         info: {
             title: "Future Predictions",
             text1: "Litecoin is most popular in countries with high levels of cryptocurrency adoption, such as the USA, South Korea, and the UK.",
@@ -90,7 +100,7 @@ export const infaLitecoin: TypeInfaSect[] = [
         }
     },
     {
-        iconName: "Litecoin3",
+        graphic: LitecoinChart,
         info: {
             title: "Popular Countries",
             text1: "Litecoin has global distribution but is especially popular in countries with developed cryptocurrency infrastructure.",
